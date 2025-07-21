@@ -3,7 +3,7 @@ package f_TestNG;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class c_DependsOn_Test {
+public class c_DependsOn_Test3 {
 	public String orgName="";
 	
 	@Test

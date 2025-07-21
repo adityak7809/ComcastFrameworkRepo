@@ -3,19 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="p_Debug.a_OrgTest">
+      <class name="q_Maven_CMD.a_CreateOrg_Test">
         <methods>
           <include name="configAM"/>
+          <include name="createOrg_Test"/>
           <include name="configBM"/>
-          <include name="createOrganizationWithPhoneNumber_Test"/>
-          <include name="createOrganizationWithIndustry_Test"/>
           <include name="configAC"/>
           <include name="configAS"/>
-          <include name="createOrg_Test"/>
           <include name="configBC"/>
           <include name="configBS"/>
         </methods>
-      </class> <!-- p_Debug.a_OrgTest -->
+      </class> <!-- q_Maven_CMD.a_CreateOrg_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

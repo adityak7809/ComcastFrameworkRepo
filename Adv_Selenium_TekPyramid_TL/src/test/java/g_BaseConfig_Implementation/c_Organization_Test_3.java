@@ -14,7 +14,7 @@ import com.concast.crm.objectRepositoryUtility.HomePage;
 import com.concast.crm.objectRepositoryUtility.OrganizationInfoPage;
 import com.concast.crm.objectRepositoryUtility.OrganizationPage;
 
-public class c_Organization_Test extends a_BaseClass {
+public class c_Organization_Test_3 extends a_BaseClass {
 
 	@Test(priority = 1)
 	public void createOrg_Test() throws InterruptedException, IOException {

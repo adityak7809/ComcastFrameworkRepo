@@ -11,7 +11,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 @Listeners(a_ListenersImp.class)
-public class a_Flipkart_Test {
+public class a_Flipkart {
 	
 	public WebDriver driver;
 	public static WebDriver static_driver;

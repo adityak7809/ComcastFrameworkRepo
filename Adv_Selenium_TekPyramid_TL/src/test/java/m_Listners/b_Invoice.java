@@ -8,7 +8,7 @@ import com.concast.crm.baseTest.a_BaseClass;
 import com.concast.crm.listenerUtility.Listerners_ImpClass;
 
 @Listeners(Listerners_ImpClass.class)
-public class b_Invoice_Test extends a_BaseClass{
+public class b_Invoice extends a_BaseClass{
 
 	@Test
 	public void ceateInvoice_Test()

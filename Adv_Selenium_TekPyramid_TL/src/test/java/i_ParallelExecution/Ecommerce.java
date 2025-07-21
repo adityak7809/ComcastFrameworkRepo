@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Ecommerce_Test {
+public class Ecommerce {
 	
 	@Test
 	public void myntra_Test() throws InterruptedException {

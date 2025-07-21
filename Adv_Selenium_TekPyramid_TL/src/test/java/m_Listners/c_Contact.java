@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.concast.crm.baseTest.a_BaseClass;
 
 
-public class c_Contact_Test extends a_BaseClass{
+public class c_Contact extends a_BaseClass{
 
 	@Test
 	public void ceateContact_Test()

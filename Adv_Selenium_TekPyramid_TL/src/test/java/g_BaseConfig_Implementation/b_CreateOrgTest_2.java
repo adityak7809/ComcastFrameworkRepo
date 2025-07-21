@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import com.concast.crm.generic.baseUtility.BaseClass;
 
-public class b_CreateOrgTest extends BaseClass{
+public class b_CreateOrgTest_2 extends BaseClass{
 
 	
 

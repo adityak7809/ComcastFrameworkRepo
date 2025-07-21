@@ -1,9 +1,8 @@
-package i_ParallelExecution;
+package h_GroupExecution;
 
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.concast.crm.baseTest.a_BaseClass;
@@ -15,16 +14,15 @@ import com.concast.crm.objectRepositoryUtility.HomePage;
 import com.concast.crm.objectRepositoryUtility.OrganizationInfoPage;
 import com.concast.crm.objectRepositoryUtility.OrganizationPage;
 
-public class a_Organization_Test extends a_BaseClass {
+public class a_Organization extends a_BaseClass {
 
-	@Test
+	@Test(priority = 1, groups="SmokeTest")
 	public void createOrg_Test() throws InterruptedException, IOException {
 
 
 		// Utility Object Creation
 		ExcelUtiltiy excelLib = new ExcelUtiltiy();
 		JavaUtility javaLib=new JavaUtility();
-		
 
 		// Generate random number
 		String alphaNum = javaLib.getAlphaNumeric(5);
@@ -40,7 +38,6 @@ public class a_Organization_Test extends a_BaseClass {
 		CreateNewOrganizationPage createOrgObj = new CreateNewOrganizationPage(driver);
 		OrganizationInfoPage orgInfoObj = new OrganizationInfoPage(driver);
 
-	
 		
 		// 2. Navigate to organization module
 		homeObj.getOrgLink().click();
@@ -54,18 +51,23 @@ public class a_Organization_Test extends a_BaseClass {
 		// 5. Verify Organization name in header of the msg
 		String actText = orgInfoObj.getOrgNameHeaderText().getText();
 
-		boolean status=actText.contains(orgName);
-		
-		Assert.assertEquals(status, true);
-		
+		if (actText.contains(orgName)) {
+			System.out.println(orgName + " is created==PASS");
+		} else {
+			System.out.println(orgName + " is not created==FAIL");
+		}
 
 		String actOrgName = orgInfoObj.getOrgNameText().getText();
 
-		Assert.assertEquals(actOrgName, orgName);
+		if (actOrgName.equals(orgName)) {
+			System.out.println("Organization name is displayed==PASS");
+		} else {
+			System.out.println("Organization name is not displayed==FAIL");
+		}
 
 	}
 
-	@Test
+	@Test(priority = 2, groups="RegressionTest")
 	public void createOrganizationWithIndustry_Test() throws InterruptedException, IOException 
 	{		
 		// Utility Object Creation
@@ -92,7 +94,6 @@ public class a_Organization_Test extends a_BaseClass {
 		CreateNewOrganizationPage createOrgObj=new CreateNewOrganizationPage(driver);
 		OrganizationInfoPage orgInfoObj=new OrganizationInfoPage(driver);
 
-		
 
 		//2. Navigate to organization module
 		homeObj.getOrgLink().click();
@@ -102,7 +103,7 @@ public class a_Organization_Test extends a_BaseClass {
 		orgObj.getCreateOrgLink().click();
 
 		//4. Enter all the details & create new Organization
-		createOrgObj.getOrgNameEdit().sendKeys(orgName);
+		createOrgObj.createOrg(orgName);
 
 		webdriverLib.selectFromDropdown(createOrgObj.getIndustry(), indName);
 
@@ -110,9 +111,8 @@ public class a_Organization_Test extends a_BaseClass {
 
 
 		//Click Save button
-		createOrgObj.getSaveButton().click();
+		createOrgObj.getSaveButton();
 
-		
 
 		//5. Verify Industry and type name is visbile in info page
 		String actText=orgInfoObj.getIndustryText().getText();
@@ -138,14 +138,15 @@ public class a_Organization_Test extends a_BaseClass {
 
 	}
 
-	@Test
+	@Test(priority = 3, groups="RegressionTest")
 	public void createOrganizationWithPhoneNumber_Test() throws EncryptedDocumentException, IOException
 	{
 
 		//Object Creation
 		ExcelUtiltiy excelUtil=new ExcelUtiltiy();
 		JavaUtility javaUtil=new JavaUtility();	
-		
+
+
 		//Generate random number
 		String alphaNum=javaUtil.getAlphaNumeric(5);
 
@@ -164,8 +165,6 @@ public class a_Organization_Test extends a_BaseClass {
 		CreateNewOrganizationPage createOrgObj=new CreateNewOrganizationPage(driver);
 		OrganizationInfoPage orgInfoObj=new OrganizationInfoPage(driver);
 
-		
-		
 		//2. Navigate to organization module
 		homeObj.getOrgLink().click();
 

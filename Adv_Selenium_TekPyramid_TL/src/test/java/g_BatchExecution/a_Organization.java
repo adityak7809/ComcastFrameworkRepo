@@ -1,4 +1,4 @@
-package h_GroupExecution;
+package g_BatchExecution;
 
 import java.io.IOException;
 
@@ -14,9 +14,9 @@ import com.concast.crm.objectRepositoryUtility.HomePage;
 import com.concast.crm.objectRepositoryUtility.OrganizationInfoPage;
 import com.concast.crm.objectRepositoryUtility.OrganizationPage;
 
-public class a_Organization_Test extends a_BaseClass {
+public class a_Organization extends a_BaseClass {
 
-	@Test(priority = 1, groups="SmokeTest")
+	@Test
 	public void createOrg_Test() throws InterruptedException, IOException {
 
 
@@ -67,7 +67,7 @@ public class a_Organization_Test extends a_BaseClass {
 
 	}
 
-	@Test(priority = 2, groups="RegressionTest")
+	@Test
 	public void createOrganizationWithIndustry_Test() throws InterruptedException, IOException 
 	{		
 		// Utility Object Creation
@@ -138,7 +138,7 @@ public class a_Organization_Test extends a_BaseClass {
 
 	}
 
-	@Test(priority = 3, groups="RegressionTest")
+	@Test
 	public void createOrganizationWithPhoneNumber_Test() throws EncryptedDocumentException, IOException
 	{
 

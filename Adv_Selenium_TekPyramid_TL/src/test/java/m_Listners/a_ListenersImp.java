@@ -19,7 +19,7 @@ public class a_ListenersImp implements ITestListener{
 		
 		JavaUtility javaUtil=new JavaUtility();
 		
-		TakesScreenshot ts = (TakesScreenshot) a_Flipkart_Test.static_driver;
+		TakesScreenshot ts = (TakesScreenshot) a_Flipkart.static_driver;
 
 		File src=ts.getScreenshotAs(OutputType.FILE);
 

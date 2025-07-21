@@ -21,7 +21,7 @@ import com.concast.crm.objectRepositoryUtility.LoginPage;
 import com.concast.crm.objectRepositoryUtility.OrganizationInfoPage;
 import com.concast.crm.objectRepositoryUtility.OrganizationPage;
 
-public class b_Contact_Test extends a_BaseClass {
+public class b_Contact extends a_BaseClass {
 	
 	@Test(priority = 1)
 	public  void createContact_Test() throws EncryptedDocumentException, IOException {
