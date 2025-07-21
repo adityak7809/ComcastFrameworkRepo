@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="g_BatchExecution.b_Contact_Test">
+        <methods>
+          <include name="createContactWithSupportDate_Test"/>
+          <include name="createContactWithOrganization_Test"/>
+          <include name="configAM"/>
+          <include name="createContact_Test"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="configBM"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+        </methods>
+      </class> <!-- g_BatchExecution.b_Contact_Test -->
+      <class name="g_BatchExecution.a_Organization_Test">
+        <methods>
+          <include name="configAM"/>
+          <include name="createOrganizationWithIndustry_Test"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="configBM"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="createOrganizationWithPhoneNumber_Test"/>
+        </methods>
+      </class> <!-- g_BatchExecution.a_Organization_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->
