@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	
-	<listeners>
-		<listener class-name="com.concast.crm.listenerUtility.Listerners_ImpClass"></listener>
-	</listeners>
-	
   <test thread-count="5" name="Test">
     <classes>
-      <class name="p_Debug.a_OrgTest">
-      </class>
+      <class name="q_Maven_CMD.a_CreateOrg_Test"/>
+      <class name="q_Maven_CMD.b_CreateOrgWithIndustry_Test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

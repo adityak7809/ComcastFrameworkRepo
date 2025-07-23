@@ -32,7 +32,7 @@ public class o_ReadData_JDBC {
 	    //Print data in console
 	    while(rs.next())
 	    {
-	    	System.out.println(rs.getString(1)+" "+rs.getString("job_title")+" "+rs.getString(3)+" "+rs.getInt(4));
+	    	System.out.println(rs.getString(1)+" "+rs.getString("job_title")+" "+rs.getString("min_salary")+" "+rs.getInt(4));
 	    } 
 	    
 	    

@@ -6,6 +6,7 @@ import java.sql.SQLException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -52,11 +53,18 @@ public class a_BaseClass {
 	public void configBC() throws IOException
 	{
 		System.out.println("===Launch the browser===");
-		String browser=fileLib.getDataFromPropertiesFile("browser");
+		String propData=fileLib.getDataFromPropertiesFile("browser");
 		
-//		String browser=Browser;
+		String browser=System.getProperty("browser",propData);
 		
-		if(browser.equals("chrome"))
+		if(browser.equals("headless"))
+		{
+			ChromeOptions options=new ChromeOptions();
+			options.addArguments("--headless");
+			driver=new ChromeDriver(options);
+			System.out.println("Opening Chrome headless browser....");
+		}
+		else if(browser.equals("chrome"))
 		{
 			driver=new ChromeDriver();
 			System.out.println("Opening Chrome browser....");

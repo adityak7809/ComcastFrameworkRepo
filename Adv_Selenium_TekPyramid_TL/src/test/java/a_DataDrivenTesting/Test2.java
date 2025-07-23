@@ -1,26 +1,28 @@
 package a_DataDrivenTesting;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.util.Arrays;
 
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+import org.testng.annotations.Test;
 
 public class Test2 {
-	public static void main(String[] args) throws FileNotFoundException, IOException, ParseException {
+	
+	@Test
+	public void m1() {
 		
-		JSONParser parser=new JSONParser();
-		Object obj=parser.parse(new FileReader("./src/test/resources/AppCommonData.json"));
+int arr[]= {1,2,3,4,5,6,7};
 		
-		JSONObject map=(JSONObject)obj;
+		int rev[]=new int[arr.length];
 		
-		System.out.println(map.get("url"));
-		String username=map.get("username").toString();
-		System.out.println(username);
 		
-		map.put("orgName", "Facebook");
+		for(int i=arr.length-1; i>=0; i--)
+		{
+			for(int j=0; j<rev.length; j++)
+			{
+				rev[j]=arr[i];
+			}
+		}
+		
+		System.out.println(Arrays.toString(rev));
 		
 		
 		

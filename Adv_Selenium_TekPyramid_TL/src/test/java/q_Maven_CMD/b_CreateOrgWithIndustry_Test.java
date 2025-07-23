@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.concast.crm.baseTest.a_BaseClass;
 import com.concast.crm.generic.fileUtility.ExcelUtiltiy;
 import com.concast.crm.generic.webdriverUtility.JavaUtility;
+import com.concast.crm.generic.webdriverUtility.UtilityClassObject;
 import com.concast.crm.generic.webdriverUtility.WebdriverUtility;
 import com.concast.crm.objectRepositoryUtility.CreateNewOrganizationPage;
 import com.concast.crm.objectRepositoryUtility.HomePage;
@@ -29,10 +30,11 @@ public class b_CreateOrgWithIndustry_Test extends a_BaseClass{
 
 
 		//Generate random number
+		UtilityClassObject.getTest().info("Generate random number");
 		String alphaNum=javaUtil.getAlphaNumeric(5);
 
 		//Read Test Script from Excel
-
+		UtilityClassObject.getTest().info("Read data from Excel file");
 		String data=excelUtil.getDataFromExcelFile("Organization", 1, 2);
 		String orgName=data+alphaNum;
 
@@ -48,13 +50,16 @@ public class b_CreateOrgWithIndustry_Test extends a_BaseClass{
 
 
 		//2. Navigate to organization module
+		UtilityClassObject.getTest().info("Navigate to Organization module");
 		homeObj.getOrgLink().click();
 
 
 		//3. Click on "Create Organization" button
+		UtilityClassObject.getTest().info("Click on Create Org");
 		orgObj.getCreateOrgLink().click();
 
 		//4. Enter all the details & create new Organization
+		UtilityClassObject.getTest().info("Click on Save button");
 		createOrgObj.createOrg(orgName);
 
 		webdriverLib.selectFromDropdown(createOrgObj.getIndustry(), indName);

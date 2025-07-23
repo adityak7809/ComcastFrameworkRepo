@@ -1,41 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-21T17:36:32 IST" name="Default suite" finished-at="2025-07-21T17:36:42 IST" duration-ms="9945">
+  <suite started-at="2025-07-23T16:29:42 IST" name="Suite" finished-at="2025-07-23T16:30:02 IST" duration-ms="20521">
     <groups>
     </groups>
-    <test started-at="2025-07-21T17:36:32 IST" name="Default test" finished-at="2025-07-21T17:36:42 IST" duration-ms="9945">
+    <test started-at="2025-07-23T16:29:42 IST" name="Test" finished-at="2025-07-23T16:30:02 IST" duration-ms="20521">
       <class name="q_Maven_CMD.b_CreateOrgWithIndustry_Test">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3eb738bb]" started-at="2025-07-21T17:36:32 IST" name="configBS" finished-at="2025-07-21T17:36:32 IST" duration-ms="111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3eb738bb]" started-at="2025-07-21T17:36:32 IST" name="configBC" finished-at="2025-07-21T17:36:33 IST" duration-ms="932" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3cd3e762]" started-at="2025-07-23T16:29:51 IST" name="configBC" finished-at="2025-07-23T16:29:52 IST" duration-ms="641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3eb738bb]" started-at="2025-07-21T17:36:33 IST" name="configBM" finished-at="2025-07-21T17:36:34 IST" duration-ms="600" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3cd3e762]" started-at="2025-07-23T16:29:52 IST" name="configBM" finished-at="2025-07-23T16:29:52 IST" duration-ms="545" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="createOrganizationWithIndustry_Test()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3eb738bb]" started-at="2025-07-21T17:36:34 IST" name="createOrganizationWithIndustry_Test" finished-at="2025-07-21T17:36:41 IST" duration-ms="6957" status="PASS">
+        <test-method signature="createOrganizationWithIndustry_Test()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3cd3e762]" started-at="2025-07-23T16:29:52 IST" name="createOrganizationWithIndustry_Test" finished-at="2025-07-23T16:30:01 IST" duration-ms="8897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrganizationWithIndustry_Test -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3eb738bb]" started-at="2025-07-21T17:36:41 IST" name="configAM" finished-at="2025-07-21T17:36:42 IST" duration-ms="1279" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3cd3e762]" started-at="2025-07-23T16:30:01 IST" name="configAM" finished-at="2025-07-23T16:30:02 IST" duration-ms="1170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3eb738bb]" started-at="2025-07-21T17:36:42 IST" name="configAC" finished-at="2025-07-21T17:36:42 IST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3cd3e762]" started-at="2025-07-23T16:30:02 IST" name="configAC" finished-at="2025-07-23T16:30:02 IST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:q_Maven_CMD.b_CreateOrgWithIndustry_Test@3eb738bb]" started-at="2025-07-21T17:36:42 IST" name="configAS" finished-at="2025-07-21T17:36:42 IST" duration-ms="0" status="PASS">
+      </class> <!-- q_Maven_CMD.b_CreateOrgWithIndustry_Test -->
+      <class name="q_Maven_CMD.a_CreateOrg_Test">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:q_Maven_CMD.a_CreateOrg_Test@1e800aaa]" started-at="2025-07-23T16:29:41 IST" name="configBS" finished-at="2025-07-23T16:29:42 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:q_Maven_CMD.a_CreateOrg_Test@1e800aaa]" started-at="2025-07-23T16:29:42 IST" name="configBC" finished-at="2025-07-23T16:29:43 IST" duration-ms="940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:q_Maven_CMD.a_CreateOrg_Test@1e800aaa]" started-at="2025-07-23T16:29:43 IST" name="configBM" finished-at="2025-07-23T16:29:45 IST" duration-ms="2226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrg_Test()[pri:0, instance:q_Maven_CMD.a_CreateOrg_Test@1e800aaa]" started-at="2025-07-23T16:29:45 IST" name="createOrg_Test" finished-at="2025-07-23T16:29:50 IST" duration-ms="4612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrg_Test -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:q_Maven_CMD.a_CreateOrg_Test@1e800aaa]" started-at="2025-07-23T16:29:50 IST" name="configAM" finished-at="2025-07-23T16:29:51 IST" duration-ms="1218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:q_Maven_CMD.a_CreateOrg_Test@1e800aaa]" started-at="2025-07-23T16:29:51 IST" name="configAC" finished-at="2025-07-23T16:29:51 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:q_Maven_CMD.a_CreateOrg_Test@1e800aaa]" started-at="2025-07-23T16:30:02 IST" name="configAS" finished-at="2025-07-23T16:30:02 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- q_Maven_CMD.b_CreateOrgWithIndustry_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- q_Maven_CMD.a_CreateOrg_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
