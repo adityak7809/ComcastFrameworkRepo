@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="q_Maven_CMD.a_CreateOrg_Test"/>
+     <class name="q_Maven_CMD.a_CreateOrg_Test"/>
       <class name="q_Maven_CMD.b_CreateOrgWithIndustry_Test"/>
     </classes>
   </test> <!-- Test -->

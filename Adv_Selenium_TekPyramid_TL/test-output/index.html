@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\adity\git\CRM\Adv_Selenium_TekPyramid_TL\testng.xml</span>
+                    <span>C:\Users\adity\git\CRM\Adv_Selenium_TekPyramid_TL\SmokeTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,11 +104,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="q_Maven_CMD.a_CreateOrg_Test" class="method navigator-link" hash-for-method="createOrg_Test">createOrg_Test</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="q_Maven_CMD.b_CreateOrgWithIndustry_Test" class="method navigator-link" hash-for-method="createOrganizationWithIndustry_Test">createOrganizationWithIndustry_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -123,21 +118,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">q_Maven_CMD.b_CreateOrgWithIndustry_Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createOrganizationWithIndustry_Test">
-                  </a> <!-- createOrganizationWithIndustry_Test -->
-                  <span class="method-name">createOrganizationWithIndustry_Test</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -156,7 +136,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\adity\git\CRM\Adv_Selenium_TekPyramid_TL\testng.xml</span>
+            <span class="header-content">C:\Users\adity\git\CRM\Adv_Selenium_TekPyramid_TL\SmokeTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -166,7 +146,6 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;q_Maven_CMD.a_CreateOrg_Test&quot;/&gt;
-      &lt;class name=&quot;q_Maven_CMD.b_CreateOrgWithIndustry_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -180,7 +159,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,20 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createOrganizationWithIndustry_Test')
-data.setCell(0, 2, 'q_Maven_CMD.b_CreateOrgWithIndustry_Test')
-data.setCell(0, 3, 8897);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createOrg_Test')
-data.setCell(1, 2, 'q_Maven_CMD.a_CreateOrg_Test')
-data.setCell(1, 3, 4612);
+data.setCell(0, 1, 'createOrg_Test')
+data.setCell(0, 2, 'q_Maven_CMD.a_CreateOrg_Test')
+data.setCell(0, 3, 5974);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -234,18 +209,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">q_Maven_CMD.b_CreateOrgWithIndustry_Test</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">configAS</span>
-                <br/>
-                <span class="ignored-method-name">configBS</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -261,53 +227,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">configBC</span>
-                <span class="method-start">338 ms</span>
+                <span class="method-start">334 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">configBM</span>
-                <span class="method-start">1287 ms</span>
+                <span class="method-start">1236 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createOrg_Test</span>
-                <span class="method-start">3514 ms</span>
+                <span class="method-start">5007 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">configAM</span>
-                <span class="method-start">8126 ms</span>
+                <span class="method-start">10981 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">configAC</span>
-                <span class="method-start">9345 ms</span>
+                <span class="method-start">12213 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">q_Maven_CMD.b_CreateOrgWithIndustry_Test</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">configBC</span>
-                <span class="method-start">9471 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">configBM</span>
-                <span class="method-start">10113 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createOrganizationWithIndustry_Test</span>
-                <span class="method-start">10658 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">configAM</span>
-                <span class="method-start">19555 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">configAC</span>
-                <span class="method-start">20725 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">q_Maven_CMD.a_CreateOrg_Test</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">configAS</span>
-                <span class="method-start">20861 ms</span>
+                <span class="method-start">12348 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
