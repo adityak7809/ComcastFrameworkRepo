@@ -53,6 +53,7 @@ public class a_BaseClass {
 	public void configBC() throws IOException
 	{
 		System.out.println("===Launch the browser===");
+		
 		String propData=fileLib.getDataFromPropertiesFile("browser");
 		
 		String browser=System.getProperty("browser",propData);
