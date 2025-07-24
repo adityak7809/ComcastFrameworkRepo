@@ -1,6 +1,7 @@
 package q_Maven_CMD;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
@@ -15,8 +16,18 @@ import com.concast.crm.objectRepositoryUtility.HomePage;
 import com.concast.crm.objectRepositoryUtility.OrganizationInfoPage;
 import com.concast.crm.objectRepositoryUtility.OrganizationPage;
 
+
 @Listeners(com.concast.crm.listenerUtility.Listerners_ImpClass.class)
 public class a_CreateOrg_Test extends a_BaseClass{
+	
+	@Test
+	public void testName(Method mtd)
+	{
+		System.out.println(mtd.getName());
+	}
+	{
+		
+	}
 	
 	@Test
 	public void createOrg_Test() throws InterruptedException, IOException {
