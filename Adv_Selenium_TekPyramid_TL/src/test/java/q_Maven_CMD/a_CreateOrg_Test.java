@@ -20,14 +20,8 @@ import com.concast.crm.objectRepositoryUtility.OrganizationPage;
 @Listeners(com.concast.crm.listenerUtility.Listerners_ImpClass.class)
 public class a_CreateOrg_Test extends a_BaseClass{
 	
-	@Test
-	public void testName(Method mtd)
-	{
-		System.out.println(mtd.getName());
-	}
-	{
-		
-	}
+
+	
 	
 	@Test
 	public void createOrg_Test() throws InterruptedException, IOException {
